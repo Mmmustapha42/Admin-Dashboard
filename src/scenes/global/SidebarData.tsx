@@ -1,16 +1,14 @@
 import React from 'react'
-import HomeOutLinedIcon from '@mui/icons-material/HomeOutlined'
-import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
-import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
-import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
-import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+import PeopleIcon from '@mui/icons-material/People';
+import ContactsIcon from '@mui/icons-material/Contacts';
+import ReceiptIcon from '@mui/icons-material/Receipt';
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+import BarChartIcon from '@mui/icons-material/BarChart';
+import PieChartIcon from '@mui/icons-material/PieChart';
+import ShowChartIcon from '@mui/icons-material/ShowChart';
+import TableChartIcon from '@mui/icons-material/TableChart';
 
 
 interface SidebarItem {
@@ -30,64 +28,61 @@ interface SidebarItem {
 
 export const SidebarData = [
     {
-        title:'Home',
-        icon:<HomeOutLinedIcon/>,
-        link:'/home'
+        title:'Manage team',
+        icon:<PeopleIcon/>,
+        link:'/team'
     },
     {
-        title:'Home',
-        icon:<ContactsOutlinedIcon/>,
-        link:'home'
+        title:'Contacts information',
+        icon:<ContactsIcon/>,
+        link:'/contacts'
     },
     {
-        title:'Home',
-        icon:<ReceiptOutlinedIcon/>,
-        link:'/home'
+        title:'Invoices Balances',
+        icon:<ReceiptIcon/>,
+        link:'/invoices'
+    }
+]
+
+export const pages =[
+    {
+        title:'Profile Form',
+        icon:<PersonOutlineIcon/>,
+        link:'/profile'
     },
     {
-        title:'Home',
-        icon:<PersonOutlinedIcon/>,
-        link:'/home'
+        title:'Calendar',
+        icon:<CalendarMonthIcon/>,
+        link:'/calendar'
     },
     {
-        title:'Home',
-        icon:<PeopleOutlinedIcon/>,
-        link:'/home'
+        title:'FAQ Page',
+        icon:<HelpOutlineIcon/>,
+        link:'/faq'
+    }
+
+]
+
+export const charts = [
+    {
+        title:'Bar Chart',
+        icon:<BarChartIcon/>,
+        link:'/bar-chart'
     },
     {
-        title:'Home',
-        icon:<CalendarTodayOutlinedIcon/>,
-        link:'/home'
+        title:'Pie Chart',
+        icon:<PieChartIcon/>,
+        link:'pie-chart'
     },
     {
-        title:'Home',
-        icon:<HelpOutlineOutlinedIcon/>,
-        link:'/home'
+        title:'Line Chart',
+        icon:<ShowChartIcon/>,
+        link:'/line-chart'
     },
     {
-        title:'Home',
-        icon:<BarChartOutlinedIcon/>,
-        link:'/home'
-    },
-    {
-        title:'Home',
-        icon:<PieChartOutlineOutlinedIcon/>,
-        link:'/home'
-    },
-    {
-        title:'Home',
-        icon:<TimelineOutlinedIcon/>,
-        link:'/home'
-    },
-    {
-        title:'Home',
-        icon:<MenuOutlinedIcon/>,
-        link:'/home'
-    },
-    {
-        title:'Home',
-        icon:<MapOutlinedIcon/>,
-        link:'/home'
-    },
+        title:'Geography Chart',
+        icon:<TableChartIcon/>,
+        link:'/geography'
+    }
 ]
  

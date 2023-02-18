@@ -1,14 +1,10 @@
- import React from "react"; 
+ 
 
- const mustapha = () => {
-
- }
-
- export default mustapha
+ 
  
 
 
-  /*import { tokens } from "../theme";
+import { tokens } from "../Themes";
 
 export const mockDataTeam = [
   {
@@ -1290,4 +1286,4 @@ export const mockGeographyData = [
     id: "KOR",
     value: 171135,
   },
-]; */
+];
